@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.corner-button {
+    @apply w-full h-full text-[1.2rem] md:text-[1.3rem] border-2 border-black rounded-md hover:text-[1.3rem] md:hover:text-[1.4rem] duration-100;
+}

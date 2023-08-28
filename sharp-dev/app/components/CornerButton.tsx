@@ -2,12 +2,12 @@
 
 const CornerButton = ({
   text,
-  shadow,
+  className,
   isOpen,
   setIsOpen,
 }: {
   text: string;
-  shadow: string;
+  className: string;
   isOpen: boolean;
   setIsOpen: (arg: boolean) => void;
 }) => {
@@ -17,7 +17,7 @@ const CornerButton = ({
         setIsOpen(!isOpen);
       }}
       data-is-open={isOpen}
-      className={`corner-button data-[is-open=true]:${shadow}`}
+      className={`corner-button ${className}`}
     >
       {text}
     </button>

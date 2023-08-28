@@ -7,19 +7,19 @@ import CornerButton from "./components/CornerButton";
 const cornerButtonData = [
   {
     text: "Projects",
-    shadow: "shadow-br",
+    corner: "corner-tl",
   },
   {
     text: "Experience",
-    shadow: "shadow-bl",
+    corner: "corner-tr",
   },
   {
     text: "Education",
-    shadow: "shadow-tr",
+    corner: "corner-bl",
   },
   {
     text: "Technology",
-    shadow: "shadow-tl",
+    corner: "corner-br",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Home() {
             <CornerButton
               key={i}
               text={tab.text}
-              shadow={tab.shadow}
+              className={tab.corner}
               isOpen={i === openedTab}
               setIsOpen={(isOpen) => {
                 setOpenedTab(isOpen ? i : -1);

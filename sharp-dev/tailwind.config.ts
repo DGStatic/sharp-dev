@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       boxShadow: {
         'br' : '5px 5px 2px 1px rgba(0, 0, 0, 0.5)',
         'bl' : '-5px 5px 2px 1px rgba(0, 0, 0, 0.5)',
@@ -23,7 +18,6 @@ const config: Config = {
   },
   plugins: [],
   variants: {
-    boxShadow: ['hover'],
   }
 }
 export default config
